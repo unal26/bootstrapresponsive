@@ -1,0 +1,107 @@
+* {
+    font-family: "montserrat";
+  }
+.section-pt-pb-100 {
+
+    padding: 100px 0;
+}  
+body {
+    background: #f1fbff;
+  }
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+.carousel-caption p {
+width: 60%;
+margin: auto;
+font-size: 20px;
+line-height: 2;
+
+}
+.carousel-inner::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.carousel-item img {
+    height: 100vh ;
+}
+ .card {
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+    border: none;
+}
+.floating-button {
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(119, 195, 119);
+    opacity: 0.9;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+    animation: floating-btn-anim  1s ease-in-out 1s infinite alternate;
+
+}
+.floating-button i {
+    color: green;
+    font-size: 30px;
+}
+.floating-button p {
+   margin-top: 10px;
+  
+}
+
+
+@keyframes floating-btn-anim {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+/* Tablet*/
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+}
+
+/*Telefon */
+@media only screen and (max-width:767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .carousel-caption {
+        bottom: 125px;
+    }
+    .carousel-caption h5 {
+        font-size: 25px;
+    }
+    .carousel-caption p {
+        font-size: 20px;
+    }
+}
